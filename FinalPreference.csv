@@ -1,0 +1,19 @@
+Age,Gender,PreparationMethod,Ingredients,ServingTemperature,Intensity,CoffeeName,ImageLabel
+16,0,Espresso,Black coffee,Hot,Single shot,Americano,americano.jpeg
+25,0,Pour Over,Milk-based drinks,Iced,Double shot,Latte,latte.jpg
+46,1,Cold Brew,Flavored coffee,Cold brew,Ristretto,Vanilla Latte,vanillalatte.jpg
+33,1,French Press,Sweetened coffee,Iced,Lungo,Caramel Macchiato,caramelmacchiato.jpg
+12,1,Aero Press,Decaffeinated coffee,Cold brew,Espresso con Panna,Decaf Mocha,decafmocha.jpg
+35,0,Irish Coffee,"Irish whiskey, coffee, cream",Hot,Double shot,Irish Coffee,irishcoffee.jpg
+38,1,Espresso,Flavored coffee,Hot,Double shot,Mocha,mocha.jpg
+20,0,Turkish Coffee,"Coffee, sugar",Hot,Single shot,Turkish Coffee,turkishcoffee.jpg
+28,0,Chemex,Cinnamon-infused coffee,Hot,Single shot,Cinnamon Latte,cinnamonlatte.jpg
+40,1,Aeropress,Coconut milk,Hot,Single shot,Coconut Mocha,coconutmocha.jpg
+22,0,Siphon,Orange peel,Hot,Double shot,Orange Mocha,siphonorangemocha.jpg
+55,1,French Press,Dark chocolate,Hot,Double shot,Chocolate Espresso,chocolateespresso.jpg
+18,0,Espresso,Almond milk,Hot,Single shot,Almond Latte,almondlatte.jpg
+30,1,Cold Brew,Vanilla extract,Cold brew,Double shot,Vanilla Cold Brew,vanillacoldbrew.jpg
+42,0,Espresso,Cinnamon,Hot,Double shot,Cinnamon Mocha,cinnamonmocha.jpg
+25,1,V60,Pumpkin spice syrup,Hot,Single shot,Pumpkin Spice Latte,pumpkinspicelatte.jpg
+48,0,Chemex,Maple syrup,Hot,Single shot,Maple Latte,maplelatte.jpg
+37,1,French Press,Honey,Hot,Double shot,Honey Espresso,honeyespresso.jpg

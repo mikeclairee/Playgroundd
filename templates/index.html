@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Recommender</title>
+    <link href="static/images/logo.jpg" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Coffee Recommender</h1>
+        <form action="/" method="POST" id="coffeeForm">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="10" max="100" placeholder="Enter your age" style="width: 87%;"required>
+
+            
+            <div class="gender-container">
+                <span class="gender-label">Gender:</span>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" class="gender-radio" value="0" required>
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" class="gender-radio" value="1" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            
+            <label for="preparation">Preparation Method:</label>
+            <select id="preparation" name="preparation" required>
+                <option disabled selected>Select Preferred Method</option>
+                <option value="1">Espresso</option>
+                <option value="2">Pour Over</option>
+                <option value="4">Cold Brew</option>
+                <option value="5">French Press</option>
+                <option value="6">Aero Press</option>
+                <option value="7">Irish Coffee</option>
+                <option value="8">Turkish Coffee</option>
+                <option value="9">Siphon</option>
+                <option value="10">V60</option>
+            </select>
+            
+            <label for="ingredients">Ingredients:</label>
+            <select id="ingredients" name="ingredients" required>
+                <option disabled selected>Select Preferred Ingredients</option>
+                <option value="1">Black coffee</option>
+                <option value="2">Milk-Based drinks</option>
+                <option value="3">Flavored coffee</option>
+                <option value="4">Sweetened coffee</option>
+                <option value="5">Decaffeinated coffee</option>
+                <option value="6">Irish whiskey, coffee, cream</option>
+                <option value="7">Coffee, sugar</option>
+                <option value="8">Cinnamon-infused coffee</option>
+                <option value="9">Coconut milk</option>
+                <option value="10">Orange peel</option>
+                <option value="11">Dark chocolate</option>
+                <option value="12">Almond milk</option>
+                <option value="13">Vanilla extract</option>
+                <option value="14">Cinnamon</option>
+                <option value="15">Pumpkin spice syrup</option>
+                <option value="16">Maple syrup</option>
+                <option value="17">Honey</option>
+            </select>
+            
+            <label for="temperature">Serving Temperature:</label>
+            <select id="temperature" name="temperature" required>
+                <option disabled selected>Select Preferred Temperature</option>
+                <option value="1">Hot</option>
+                <option value="2">Cold</option>
+                <option value="3">Cold Brew</option>
+            </select>
+            
+            <label for="intensity">Intensity:</label>
+            <select id="intensity" name="intensity" required>
+                <option disabled selected>Select Preferred Intensity</option>
+                <option value="1">Single Shot</option>
+                <option value="2">Double Shot</option>
+                <option value="3">Ristretto</option>
+                <option value="4">Lungo</option>
+                <option value="5">Espresso con Panna</option>
+            </select>
+            
+            <button type="submit">Recommend</button>
+        </form>
+        {% if predicted_coffee %}
+        <div class="recommendation">
+            <p>Recommended Coffee: {{ image_label }}</p>
+            <img src="{{ url_for('static', filename='images/' + predicted_coffee) }}" alt="{{ image_label }}" width="300" height="200">
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- JavaScript for animated background with coffee icons
+    <script>
+        const container = document.querySelector('.container');
+
+        for (let i = 0; i < 100; i++) { // Create 20 coffee icons
+            createCoffeeIcon();
+        }
+
+        function createCoffeeIcon() {
+            const icon = document.createElement('i');
+            icon.classList.add('fas', 'fa-coffee', 'coffee-icon'); // Add FontAwesome classes for coffee icon
+            icon.style.position = 'absolute';
+            icon.style.left = `${Math.random() * 100}%`; // Randomize horizontal position
+            icon.style.top = `${Math.random() * 100}%`; // Randomize vertical position
+            container.appendChild(icon);
+        }
+    </script>-->
+</body>
+</html>
+

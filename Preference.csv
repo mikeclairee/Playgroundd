@@ -1,0 +1,9 @@
+Age,Gender,PreparationMethod,Ingredients,ServingTemperature,Intensity,CoffeeName,ImageLabel
+16,0,Espresso,Black coffee,Hot,Single shot,Americano,americano.jpeg
+25,0,Pour Over,Milk-based drinks,Iced,Double shot,Latte,latte.jpg
+46,1,Cold Brew,Flavored coffee,Cold brew,Ristretto,Vanilla Latte,vanillalatte.jpg
+33,1,French Press,Sweetened coffee,Iced,Lungo,Caramel Macchiato,caramelmacchiato.jpg
+12,1,Aero Press,Decaffeinated coffee,Cold brew,Espresso con Panna,Decaf Mocha,decafmocha.jpg
+35,0,Irish Coffee,"Irish whiskey, coffee, cream",Hot,Double shot,Irish Coffee,irishcoffee.jpg
+38,1,Espresso,Flavored coffee,Hot,Double shot,Mocha,mocha.jpg
+20,0,Turkish Coffee,"Coffee, sugar",Hot,Single shot,Turkish Coffee,turkishcoffee.jpg
